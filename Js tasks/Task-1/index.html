@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="container my-4">
+                <hr>
+                <div class="clock mb-4">
+                    
+                </div>
+                <div class="row">
+                    <div class="col-xs-6">
+                        <div class="text-center border border-info p-5">
+                            <h4>Addition of two numbers</h4>
+                            <div class="form-row mb-2">
+                                <div class="col-md-2">
+                                  <!-- First number -->
+                                  <input type="text" class="form-control" id="first" placeholder="1st Number"> 
+                                  
+                                </div>
+                                <i class="fas fa-plus fa-2x"></i>
+                                <div class="col-md-2">
+                                  <!-- second number -->
+                                 
+                                  <input type="text" class="form-control" id="second" placeholder="2nd Number">
+                                </div>
+                                <i class="fas fa-equals fa-2x"></i>
+                                <div class="col-md-2">
+                                    <!-- Answer -->
+                                    <input type="text" class="form-control" id="answer" placeholder="Answer">
+                                  </div>
+                                  <div class="col-md-2">
+                                    <!-- Get Result -->
+                                    <button class="btn btn-info" onclick="add()">Get Result</button>
+
+                                  </div>
+                              </div>
+                              <h4>Substraction of two numbers</h4>
+                              <div class="form-row mb-2">
+                                <div class="col-md-2">
+                                  <!-- First number -->
+                                  <input type="text" class="form-control" id="first1" placeholder="1st Number"> 
+                                  
+                                </div>
+                                <i class="fas fa-minus fa-2x"></i>
+                                <div class="col-md-2">
+                                  <!-- second number -->
+                                 
+                                  <input type="text" class="form-control" id="second1" placeholder="2nd Number">
+                                </div>
+                                <i class="fas fa-equals fa-2x"></i>
+                                <div class="col-md-2">
+                                    <!-- Answer -->
+                                    <input type="text" class="form-control" id="answer1" placeholder="Answer">
+                                  </div>
+                                  <div class="col-md-2">
+                                    <!-- Get Result -->
+                                    <button class="btn btn-info" onclick="sub()">Get Result</button>
+
+                                  </div>
+                              </div>
+                              <h4>Multiplication of two numbers</h4>
+                              <div class="form-row mb-2">
+                                <div class="col-md-2">
+                                  <!-- First number -->
+                                  <input type="text" class="form-control" id="first2" placeholder="1st Number"> 
+                                  
+                                </div>
+                                <i class="fas fa-times fa-2x"></i>
+                                <div class="col-md-2">
+                                  <!-- second number -->
+                                 
+                                  <input type="text" class="form-control" id="second2" placeholder="2nd Number">
+                                </div>
+                                <i class="fas fa-equals fa-2x"></i>
+                                <div class="col-md-2">
+                                    <!-- Answer -->
+                                    <input type="text" class="form-control" id="answer2" placeholder="Answer">
+                                  </div>
+                                  <div class="col-md-2">
+                                    <!-- Get Result -->
+                                    <button class="btn btn-info" onclick="mul()">Get Result</button>
+
+                                  </div>
+                              </div>
+                              <h4>Area of Triangle</h4>
+                              <div class="form-row mb-2">
+                                <div class="col-md-2">
+                                  <!-- First number -->
+                                  <input type="text" class="form-control" id="height" placeholder="Height"> 
+                                  
+                                </div>
+                                <i class="fas fa-caret-square-up fa-2x"></i>
+                                <div class="col-md-2">
+                                  <!-- second number -->
+                                 
+                                  <input type="text" class="form-control" id="base" placeholder="Base">
+                                </div>
+                                <i class="fas fa-equals fa-2x"></i>
+                                <div class="col-md-2">
+                                    <!-- Answer -->
+                                    <input type="text" class="form-control" id="area" placeholder="Answer">
+                                  </div>
+                                  <div class="col-md-2">
+                                    <!-- Get Result -->
+                                    <button class="btn btn-info" onclick="Area()">Get Result</button>
+
+                                  </div>
+                              </div>
+                              <h4 class="pb-2">Conversion of Fahrenheit and Celsius Temperatures</h4>
+                              <div class="form-row mb-5">
+                                <div class="col-md-1">
+                                  <!-- First number -->
+                                  <i class="fas fa-temperature-low fa-2x"></i>    
+                                </div>
+                                <div class="col-md-3">
+                                  <!-- second number -->
+                                  <input type="text" class="form-control" id="celsius" placeholder="Enter Celsius Value">
+                                </div>
+                                <div class="col-md-1">
+                                    <!-- Answer -->
+                                    <i class="fas fa-arrow-right fa-2x"></i>
+                                  </div>
+                                  <div class="col-md-3">
+                                    <!-- second number -->
+                                    <input type="text" class="form-control" id="Fahrenheit" placeholder="Fahrenheit Value">
+                                  </div>
+                                  <div class="col-md-3">
+                                    <!-- Get Result -->
+                                    <button class="btn btn-info" onclick="fahr()">Get Fahrenheit</button>
+
+                                  </div>
+                              </div>
+                              <div class="form-row mb-5">
+                                <div class="col-md-1">
+                                  <!-- First number -->
+                                  <i class="fas fa-temperature-low fa-2x"></i>    
+                                </div>
+                                <div class="col-md-3">
+                                  <!-- second number -->
+                                  <input type="text" class="form-control" id="fahrenheit1" placeholder="Enter Fahrenheit Value">
+                                </div>
+                                <div class="col-md-1">
+                                    <!-- Answer -->
+                                    <i class="fas fa-arrow-right fa-2x"></i>
+                                  </div>
+                                  <div class="col-md-3">
+                                    <!-- second number -->
+                                    <input type="text" class="form-control" id="celsius1" placeholder="Celsius Value">
+                                  </div>
+                                  <div class="col-md-3">
+                                    <!-- Get Result -->
+                                    <button class="btn btn-info" onclick="celsius()">Get Celsius</button>
+
+                                  </div>
+                              </div>
+                            
+                              <h4 class="pb-2">Enter the number to check Even or Odd</h4>
+                              <div class="form-row mb-5">
+                                <div class="col-md-1">
+                                    <!-- First number -->
+                                    <i class="fas fa-list-ol fa-2x"></i>
+                                  </div>
+                                <div class="col-md-4">
+                                  <!-- First number -->
+                                  <input type="text" class="form-control" name="" id="chknumber" placeholder="Enter the number">   
+                                </div>
+                                <div class="col-md-2">
+                                  <!-- second number -->
+                                  <button class="btn btn-info" onclick="check()">Check</button>
+                                </div>
+                                <div class="col-md-2 pr-3">
+                                    <!-- second number -->
+                                    <h2 class="result"></h2>
+                                  </div>
+                             </div>
+                             <h4 class="pb-2">Find the Largest Number</h4>
+                             <h3 class="text-danger">[25,30,75,12,95,8,4]</h3>
+                              <div class="form-row mb-5">
+                                <div class="col-md-1">
+                                    <!-- First number -->
+                                    <i class="fas fa-list-ol fa-2x"></i>
+                                  </div>
+                                <div class="col-md-4">
+                                  <!-- First number -->
+                                  <button class="btn btn-outline-info" onclick="larg()">Check Largest number</button>
+                                </div>
+                                <div class="col-md-4">
+                                    <!-- First number -->
+                                    <h2 class="large"></h2>
+                                  </div>
+                             </div>
+                             <h4 class="pb-2">To Find the Sin value of a Number</h4>
+                             <div class="form-row mb-5">
+                                <div class="col-md-1">
+                                    <!-- First number -->
+                                    <i class="fas fa-percent fa-2x"></i>
+                                  </div>
+                                <div class="col-md-3">
+                                  <!-- First number -->
+                                  <input type="text" class="form-control" name="" id="sin" placeholder="Enter the number">   
+                                </div>
+                                <div class="col-md-3">
+                                    <!-- First number -->
+                                    <button class="btn btn-outline-info" onclick="sin()">Get result</button>
+                                  </div>
+                                  <div class="col-md-4">
+                                    <!-- First number -->
+                                    <h2 class="sinvalue"></h2>
+                                  </div>
+                             </div>
+                             <h3 class="">To find the Square root vallue</h3>
+                             <div class="form-row mb-5">
+                                 <div class="col-md-1">
+                                    <i class="fas fa-square-root-alt fa-2x"></i>
+                                 </div>
+                                 <div class="col-md-3">
+                                    <input type="text" class="form-control" name="" id="sqr" placeholder="Enter the number">
+                                 </div>
+                                 <div class="col-md-3">
+                                     <button  class="btn btn-outline-info" onclick="sqrtfn()">Get Square-root</button>
+                                 </div>
+                                 <div class="col-md-3">
+                                   <h2 class="sqrRes"></h2>
+                                </div>
+                             </div>
+                             <h4>Power of the value</h4>
+                             <div class="form-row mb-2">
+                               <div class="col-md-3">
+                                 <!-- Number -->
+                                 <input type="text" class="form-control" id="num" placeholder="Enter Number"> 
+                                 
+                               </div>
+                               <div class="col-md-3">
+                                 <!-- Power -->
+                                
+                                 <input type="text" class="form-control" id="power" placeholder="Power">
+                               </div>
+        
+                               <div class="col-md-3">
+                                   <!-- Answer -->
+                                   <h2 class="powResult"></h2>
+                                 </div>
+                                 <div class="col-md-2">
+                                   <!-- Get Result -->
+                                   <button class="btn btn-info" onclick="powerfn()">Get Result</button>
+
+                                </div>
+                              
+                             </div>
+
+                             <h4>Math.Ceil--rounded up to its nearest integer</h4>
+                             <div class="form-row mb-5">
+                               <div class="col-md-3">
+                                 <!-- Number -->
+                                 <input type="text" class="form-control" id="a" placeholder="Enter Decimal Number"> 
+                                 
+                               </div>
+                                 <div class="col-md-2">
+                                   <!-- Get Result -->
+                                   <button class="btn btn-info" onclick="ciel()">Get Result</button>
+
+                                </div>
+                                <div class="col-md-2">
+                                  <!-- Answer -->
+                                  <h2 id="cielresult"></h2>
+                                </div>
+                             </div>
+                             <h4>Math.floor--rounded down to its nearest integer</h4>
+                             <div class="form-row mb-5">
+                              <div class="col-md-3">
+                                <!-- Number -->
+                                <input type="text" class="form-control" id="b" placeholder="Enter Decimal Number"> 
+                                
+                              </div>
+                                <div class="col-md-2">
+                                  <!-- Get Result -->
+                                  <button class="btn btn-info" onclick="flr()">Get Result</button>
+
+                               </div>
+                               <div class="col-md-2">
+                                 <!-- Answer -->
+                                 <h2 id="flresult"></h2>
+                               </div>
+                            </div>
+
+                    </div>
+                    <div class="col-xs-6">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+
+    <style>
+        body{
+            background-image: url(/Task-1/hd.jpg);
+            background-attachment: fixed;
+            background-position: center;
+        }
+        .clock{
+            font-size: 4em;
+            text-align: center;
+            margin:20px auto;
+            color:yellow;
+            font-family: arial;
+            background-color: #333;
+        }
+        .clock span{
+            padding:20px;
+            background: #444;
+        }
+    </style>
+</body>
+</html>
